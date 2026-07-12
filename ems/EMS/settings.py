@@ -10,7 +10,10 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config("DEBUG",cast=bool,default=False)
 
-ALLOWED_HOSTS = ['192.168.100.219', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ritikaadk01.pythonanywhere.com']
+CSRF_TRUSTED_ORIGINS = [
+    'https://ritikaadk01.pythonanywhere.com',
+]
 
 
 # Applications
